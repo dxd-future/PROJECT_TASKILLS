@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="public/output.css" rel="stylesheet">
+</head>
+        <div id="modal" class="w-[100%] hidden justify-center items-center h-[740px] z-[99999] bg-[#00000080] fixed">
+            <div class="w-[700px] h-[500px] bg-white rounded-[20px]">
+                <div class="w-[100%] flex justify-end">
+                    <svg width="30px" class="m-[10px] cursor-pointer" id="closeMod" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19 5L5 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+                <h1 class="w-[100%] text-[30px] font-sans text-center select-none">hGIruiehrguehgeougegouerhgiueh</h1>
+                    <div class="w-[100%] h-[400px] flex justify-center items-center flex-col">
+                        <input id="name" placeholder="Введите имя" class="w-[400px] h-[50px] mb-[10px] px-[15px] rounded-[15px] bg-white border-[#353535] border-[1px]" type="text">
+                        <input id="phone" placeholder="Введите номер" class="w-[400px] h-[50px] mb-[10px] px-[15px] rounded-[15px] bg-white border-[#353535] border-[1px]" type="text">
+                        <textarea id="message" placeholder="Введите сообщение" class="border-[1px] border-black rounded-[15px] mb-[5px] w-[400px] p-[20px] max-h-[150px] h-[66px] min-h-[66px]"></textarea>
+                        <div class="w-[100%] justify-center mt-[10px] flex select-none">
+                            <input id="userData" class="cursor-pointer mr-[10px] rounded-full" type="checkbox">
+                            <label class="text-[15px]">Я согласен на обработку персональных данных</label>                   
+                        </div>                        
+                        <button id="btn" class="border-black w-[350px] font-sans ease-in duration-150 select-none border-[1px] m-[15px] text-[#353535] py-[5px] px-[20px] text-[20px] rounded-[30px] hover:border-[#2aa6ff] hover:text-[#2aa6ff]">Отправить</button>
+                    </div>
+            </div>
+        </div>
+        <!-- <div class="w-[100%] h-[740px] absolute z-[999]" >
+            <a href="#start" class="w-[50px] flex items-center justify-center fixed h-[50px] bottom-[10%] right-[5%] rounded-full border-[#2aa6ff] border-[1px]">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke="#2aa6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+        </div> -->
+    <body class="bg-white">
+        <header class="bg-[#404040] select-none w-[100%] h-[80px] border-[#bebebe] border-b-[1px] flex fixed z-[9999] justify-evenly">
+            <div class="w-[80px] h-[80px] flex items-center justify-center">
+                <a href="#start" class="w-[100px]">
+                    <svg class="cursor-pointer hover:fill-[#2aa6ff] ease-in duration-150" fill="#F2FCFE" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M128 209c-44.735 0-81-36.265-81-81s36.265-81 81-81 81 36.265 81 81-36.265 81-81 81zm22.53-141.14A64.379 64.379 0 0 0 128.5 64a64.352 64.352 0 0 0-22.917 4.19 1317.969 1317.969 0 0 0 21.079 22.104c.77.79 2.042.806 2.831.038 0 0 12.798-12.235 21.038-22.472zm0 121.635c-8.239-10.237-21.05-22.665-21.05-22.665a1.975 1.975 0 0 0-2.806.041s-10.22 10.605-21.09 22.294a64.352 64.352 0 0 0 22.916 4.19 64.379 64.379 0 0 0 22.03-3.86zM89.908 76.531s-26.02 17.694-26.02 51.538c0 33.845 26.02 53.465 26.02 53.465l38.09-39.787 38.376 38.29s27.389-21.385 27.389-52.066c0-30.682-27.739-51.678-27.739-51.678l-25.672 26.32 13.39 13.837 13.112-11.68s6.936 10.757 7.035 23.153c.098 12.396-6.653 24.904-6.653 24.904l-39.191-38.937-37.495 38.69s-7.684-11.61-7.65-25.002c.035-13.393 7.008-24.966 7.008-24.966l12.75 12.488 14.996-12.609-27.746-25.96z" fill-rule="evenodd"></path> </g></svg>
+                </a>   
+            </div>
+            <div class="flex">
+                <a href="#start" class="ease-in duration-150 flex justify-center items-center bg-[#404040] border-[1px] border-[#404040] text-[20px] w-[200px] text-white font-sans hover:border-x-[#bebebe] hover:text-[#2aa6ff]" id="a">Запись</a>  
+                <a href="#mid1" class="ease-in duration-150 flex justify-center items-center bg-[#404040] border-[1px] border-[#404040] text-[20px] w-[200px] text-white font-sans hover:border-x-[#bebebe] hover:text-[#2aa6ff]" id="a">Преподаватели</a>  
+                <a href="#mid2" class="ease-in duration-150 flex justify-center items-center bg-[#404040] border-[1px] border-[#404040] text-[20px] w-[200px] text-white font-sans hover:border-x-[#bebebe] hover:text-[#2aa6ff]" id="a">Вакансии</a>  
+                <a href="#info" class="ease-in duration-150 flex justify-center items-center bg-[#404040] border-[1px] border-[#404040] text-[20px] w-[200px] text-white font-sans hover:border-x-[#bebebe] hover:text-[#2aa6ff]" id="a">О нас</a>  
+            </div>
+        </header>
+        <main class="bg-white">
+            <div class="w-[50px] h-[50px] absolute left-[130px] top-[1080px]">
+                <svg class="cursor-pointer" width="60px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#404040"></path> </g></svg>
+            </div>
+            <div class="w-[50px] h-[50px] absolute right-[140px] top-[1080px]">
+                <svg class="cursor-pointer" width="60px" height="100px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#404040" stroke-width="0.00024000000000000003" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#404040"></path> </g></svg>
+            </div>
+            <div class="mx-[auto] max-w-[1170px] h-[2150px]">
+                <div id="start" class="pt-[130px] pb-[40px] w-[100%] flex items-start flex-col">
+                    <img class="w-[500px] h-[500px] absolute right-[5%] top-[20%]" src="/5ad76f22d7195c498bdf949af42ed13a (1).png">
+                    <div class="select-none text-[24px] w-[55%] z-[999] flex flex-col justify-center items-start my-[50px] text-[#1e1e1e] font-sans">
+                        <h1 class="font-bold py-[15px] ">Добро пожаловать!</h1>
+                        <p class="font-sans">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus, sed pellentesque velit ultrices quis. Cras elementum pharetra enim vitae mollis. Aenean metus sapien, ultricies in blandit at, mattis id est. Ut dapibus suscipit aliquet. Vestibulum lacinia eleifend quam, ultricies fringilla odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus.</p>
+                        <button id="mess" class="ease-in duration-150 select-none my-[30px] z-[999] border-[1px] border-[#404040] rounded-[15px] py-[10px] px-[26px] text-center text-[26px] font-semibold w-[90%]  text-[#404040] font-sans hover:border-[#2aa6ff] hover:text-[#2aa6ff]">Начать</button>
+                    </div>
+                </div>
+                <div id="mid1" class="w-[100%] h-[740px] flex justify-center items-end">
+                    <div id="teachers" class="w-[100%] mb-[50px] flex justify-around items-center">
+
+                    </div>
+                </div> 
+                <div id="mid2" class="w-[100%] h-[700px] flex justify-center items-center">
+                    <div class="select-none text-[24px] w-[55%] z-[999] flex flex-col justify-center items-start my-[50px] text-[#1e1e1e] font-sans">
+                                        <!-- 1!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                </div>
+                </div>  
+            </div>
+        </main>
+        <footer>
+            <div id="info" class="bg-[#404040] w-[100%] h-[450px] flex justify-center items-center">
+                <div class="w-[90%] font-sans h-[80%] max-w-[1170px] flex justify-around">
+                    <div class="text-white text-[15px] w-[250px] h-[100%] flex items-center flex-col justify-center">
+                        <h1 class="font-bold mb-[10px]">
+                            1231313
+                        </h1>
+                        <p class="w-[100%] h-[100%] text-balance leading-[25px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus, sed pellentesque velit ultrices quis. Cras elementum pharetra enim vitae mollis. Aenean metus sapien, ultricies in blandit at, mattis id est. Ut dapibus suscipit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus.
+                        </p>
+                    </div>
+                    <div class="text-white text-[15px] w-[250px] h-[100%] flex items-center flex-col justify-center">
+                        <h1 class="font-bold mb-[10px]">
+                            1231313
+                        </h1>
+                        <p class="w-[100%] h-[100%] text-balance leading-[25px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus, sed pellentesque velit ultrices quis. Cras elementum pharetra enim vitae mollis. Aenean metus sapien, ultricies in blandit at, mattis id est. Ut dapibus suscipit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus.
+                        </p>
+                    </div>
+                    <div class="text-white text-[15px] w-[250px] h-[100%] flex items-center flex-col justify-center">
+                        <h1 class="font-bold mb-[10px]">
+                            1231313
+                        </h1>
+                        <p class="w-[100%] h-[100%] text-balance leading-[25px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus, sed pellentesque velit ultrices quis. Cras elementum pharetra enim vitae mollis. Aenean metus sapien, ultricies in blandit at, mattis id est. Ut dapibus suscipit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus.
+                        </p>
+                    </div>
+                    <div class="text-white text-[15px] w-[250px] h-[100%] flex items-center flex-col justify-center">
+                        <h1 class="font-bold mb-[10px]">
+                            1231313
+                        </h1>
+                        <p class="w-[100%] h-[100%] text-balance leading-[25px]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus, sed pellentesque velit ultrices quis. Cras elementum pharetra enim vitae mollis. Aenean metus sapien, ultricies in blandit at, mattis id est. Ut dapibus suscipit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit erat lacus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/js/teachers.js"></script>
+        <script src="/js/func.js"></script>
+        <script src="/js/main.js"></script>
+        <style>
+            @keyframes box1 {
+
+            }
+        </style>
+    </body>
+</html>
