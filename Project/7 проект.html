@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+
+:root {
+    --1-1: 11.19%;
+    --2-2: 11%;
+
+    --page-1: "50 страниц";
+    --page-2: "14 страниц";
+
+    --complete-line: 100%;
+    --complete: "Прочитано";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: #0b0b0b;
+    padding: 0;
+    margin: 0;
+    /* overflow: hidden; */
+    font-family: "Merriweather", serif;
+}
+
+::selection {
+    background: #272727; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+
+body {
+  --sb-track-color: #1f1f1fb0;
+  --sb-thumb-color: #ffffff;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+#top-bar {
+    width: -webkit-fill-available;
+    color: rgba(255, 255, 255, 0.779);
+    background: #232323;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vh;
+    margin-bottom: 15px;
+}
+
+.book-top {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    background-color: #00000000;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.book-top:hover {
+    color: rgb(255, 255, 255);
+}
+
+#book-display-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    text-align: left;
+    margin: auto;
+}
+
+.book-image-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.book-image {
+    width: 30vh;
+    height: 43vh;
+    background-color: #292929;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.book-image-none {
+    width: 30vh;
+    height: 43vh;
+    background-color: #292929;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.book-image-none::after {
+    content: "?";
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    align-items: center;
+    font-size: 500%;
+    color: #ffffff3b;
+    text-shadow: 0 0 0px #ffffff1f;
+    transition: all 0.5s ease;
+    font-family: "Roboto Mono", monospace;
+}
+
+.book-image-none:hover::after {
+    color: #ffffff;
+    text-shadow: 0 0 15px #ffffff1f;
+}
+
+.book-image:hover {
+    transform: scale(1.05);
+}
+
+.book-category {
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+#progress-bar, #progress-bar-1, #progress-bar-2, #progress-bar-3, #progress-bar-4, #progress-bar-5, #progress-bar-6, #progress-bar-7, #progress-bar-8, #progress-bar-9, #progress-bar-10, #progress-bar-11, #progress-bar-12, #progress-bar-13, #progress-bar-14, #progress-bar-15, #progress-bar-16, #progress-bar-17, #progress-bar-18, #progress-bar-19, #progress-bar-20, #progress-bar-21, #progress-bar-22, #progress-bar-23, #progress-bar-24, #progress-bar-25, #progress-bar-26, #progress-bar-27, #progress-bar-28, #progress-bar-29, #progress-bar-30, #progress-bar-31, #progress-bar-32, #progress-bar-33, #progress-bar-34, #progress-bar-35, #progress-bar-36, #progress-bar-37, #progress-bar-38, #progress-bar-39, #progress-bar-40, #progress-bar-41, #progress-bar-42, #progress-bar-43, #progress-bar-44, #progress-bar-45, #progress-bar-46, #progress-bar-47, #progress-bar-48, #progress-bar-49, #progress-bar-50, #progress-bar-51, #progress-bar-52, #progress-bar-53, #progress-bar-54, #progress-bar-55, #progress-bar-56, #progress-bar-57, #progress-bar-58, #progress-bar-59, #progress-bar-60, #progress-bar-61, #progress-bar-62, #progress-bar-63, #progress-bar-64, #progress-bar-65, #progress-bar-66, #progress-bar-67, #progress-bar-68, #progress-bar-69, #progress-bar-70, #progress-bar-71, #progress-bar-72, #progress-bar-73, #progress-bar-74, #progress-bar-75, #progress-bar-76, #progress-bar-77, #progress-bar-78, #progress-bar-79, #progress-bar-80, #progress-bar-81, #progress-bar-82, #progress-bar-83, #progress-bar-84, #progress-bar-85, #progress-bar-86, #progress-bar-87, #progress-bar-88, #progress-bar-89, #progress-bar-90, #progress-bar-91, #progress-bar-92, #progress-bar-93, #progress-bar-94, #progress-bar-95, #progress-bar-96, #progress-bar-97, #progress-bar-98, #progress-bar-99, #progress-bar-complete { width: 80%; height: 2px; padding: 8px 5px; background-color: #ffffff96; border-radius: 25px; border: 2px solid #7c7c7c9e; box-shadow: 0 0 10px black; position: absolute; bottom: 2%; left: 0; right: 0; margin: auto; backdrop-filter: blur(2px); overflow: hidden; } 
+
+#progress-bar::before, #progress-bar-1::before, #progress-bar-2::before, #progress-bar-3::before, #progress-bar-4::before, #progress-bar-5::before, #progress-bar-6::before, #progress-bar-7::before, #progress-bar-8::before, #progress-bar-9::before, #progress-bar-10::before, #progress-bar-11::before, #progress-bar-12::before, #progress-bar-13::before, #progress-bar-14::before, #progress-bar-15::before, #progress-bar-16::before, #progress-bar-17::before, #progress-bar-18::before, #progress-bar-19::before, #progress-bar-20::before, #progress-bar-21::before, #progress-bar-22::before, #progress-bar-23::before, #progress-bar-24::before, #progress-bar-25::before, #progress-bar-26::before, #progress-bar-27::before, #progress-bar-28::before, #progress-bar-29::before, #progress-bar-30::before, #progress-bar-31::before, #progress-bar-32::before, #progress-bar-33::before, #progress-bar-34::before, #progress-bar-35::before, #progress-bar-36::before, #progress-bar-37::before, #progress-bar-38::before, #progress-bar-39::before, #progress-bar-40::before, #progress-bar-41::before, #progress-bar-42::before, #progress-bar-43::before, #progress-bar-44::before, #progress-bar-45::before, #progress-bar-46::before, #progress-bar-47::before, #progress-bar-48::before, #progress-bar-49::before, #progress-bar-50::before, #progress-bar-51::before, #progress-bar-52::before, #progress-bar-53::before, #progress-bar-54::before, #progress-bar-55::before, #progress-bar-56::before, #progress-bar-57::before, #progress-bar-58::before, #progress-bar-59::before, #progress-bar-60::before, #progress-bar-61::before, #progress-bar-62::before, #progress-bar-63::before, #progress-bar-64::before, #progress-bar-65::before, #progress-bar-66::before, #progress-bar-67::before, #progress-bar-68::before, #progress-bar-69::before, #progress-bar-70::before, #progress-bar-71::before, #progress-bar-72::before, #progress-bar-73::before, #progress-bar-74::before, #progress-bar-75::before, #progress-bar-76::before, #progress-bar-77::before, #progress-bar-78::before, #progress-bar-79::before, #progress-bar-80::before, #progress-bar-81::before, #progress-bar-82::before, #progress-bar-83::before, #progress-bar-84::before, #progress-bar-85::before, #progress-bar-86::before, #progress-bar-87::before, #progress-bar-88::before, #progress-bar-89::before, #progress-bar-90::before, #progress-bar-91::before, #progress-bar-92::before, #progress-bar-93::before, #progress-bar-94::before, #progress-bar-95::before, #progress-bar-96::before, #progress-bar-97::before, #progress-bar-98::before, #progress-bar-99::before, #progress-bar-complete::before { z-index: 10; content: "0 страниц"; position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: flex; align-items: center; justify-content: center; font-size: small; text-shadow: 0 0 2px white; }
+
+#progress-bar-1::before {
+    content: var(--page-1);
+}
+
+#progress-bar-2::before {
+    content: var(--page-2);
+}
+
+#progress-bar-3::before {
+    content: var(--page-3);
+}
+
+#progress-bar-99::before {
+    content: var(--page-99);
+}
+
+#progress-bar-complete::before {
+    content: var(--complete);
+}
+
+#line, #line-1 {
+    width: var(--1-1);
+    height: -webkit-fill-available;
+    background-color: #ffffff00;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+}
+
+#line-1 {
+    width: var(--2-2);
+}
+
+</style>
+</head>
+<body>
+
+<div id="top-bar">
+    <div class="book-top" data-target="psychology">Психология</div>
+    <div class="book-top" data-target="philosophy">Философия</div>
+    <div class="book-top" data-target="programming">Программирование</div>
+    <div class="book-top" data-target="horror">Хорроры</div>
+    <div class="book-top" data-target="another">Другое</div>
+</div>
+
+<div id="book-display-flex">
+    <div class="book-category" id="psychology">Психология</div>
+    <div class="book-image-flex">
+        <div class="book-image" style="background-image: url(Files/Обложки/absollove.webp);" onclick="openBook('Книги/Психология/Абсолютная любовь--Еркович Милан/книга.pdf');"><div id="progress-bar-1"><div id="line" style="width: var(--1-1);">⠀</div></div></div>
+        <div class="book-image" style="background-image: url(Files/Обложки/forme.webp);" onclick="openBook('Книги/Психология/К самому себе Книга--Марк Аврелий/книга.pdf')"><div id="progress-bar-complete"><div id="line" style="width: var(--complete-line);">⠀</div></div></div>
+        <div class="book-image" style="background-image: url(Files/Обложки/5language.webp);" onclick="openBook('Книги/Психология/Пять языков любви -- Чепмен Гэри/книга.pdf')"><div id="progress-bar-2"><div id="line" style="width: var(--2-2);">⠀</div></div></div>
+        <div class="book-image-none"></div>
+    </div>
+</div>
+
+<div id="book-display-flex">
+    <div class="book-category" id="philosophy">Философия</div>
+    <div class="book-image-flex">
+        <div class="book-image-none"></div>
+        <div class="book-image-none"></div>
+        <div class="book-image-none"></div>
+        <div class="book-image-none"></div>
+    </div>
+</div>
+
+<div id="book-display-flex">
+    <div class="book-category" id="programming">Программирование</div>
+    <div class="book-image-flex">
+        <div class="book-image" style="background-image: url(Files/Обложки/html5-pro.jpg);" onclick="openBook('Книги/Программирование/П. Лабберс - HTML 5 для профессионалов/книга.pdf');"></div>
+        <div class="book-image" style="background-image: url(Files/Обложки/html5-css.webp);" onclick="openBook('Книги/Программирование/Хрусталев Александр Адонисович, Кириченко Андрей Валентинович -- HTML5 + CSS3. Основы современного WEB-дизайна/книга.pdf')"></div>
+        <div class="book-image-none"></div>
+        <div class="book-image-none"></div>
+    </div>
+</div>
+
+<div id="book-display-flex">
+    <div class="book-category" id="horror">Хорроры</div>
+    <div class="book-image-flex">
+        <div class="book-image" style="background-image: url(Files/Обложки/forest.webp);"></div>
+        <div class="book-image" style="background-image: url(Files/Обложки/magaz-temnota.webp);"></div>
+        <div class="book-image" style="background-image: url(Files/Обложки/zaychik.webp);"><div id="progress-bar-complete"><div id="line" style="width: var(--complete-line);">⠀</div></div></div>
+        <div class="book-image-none"></div>
+    </div>
+</div>
+
+<div id="book-display-flex">
+    <div class="book-category" id="another">Другое</div>
+    <div class="book-image-flex">
+        <div class="book-image" style="background-image: url(Files/Обложки/duna.webp);"></div>
+        <div class="book-image-none"></div>
+        <div class="book-image-none"></div>
+        <div class="book-image-none"></div>
+    </div>
+</div>
+
+<script>
+    function openBook(path) {
+        window.open(path, '_blank');
+    }
+
+    document.querySelectorAll('.book-top').forEach(item => {
+        item.addEventListener('click', event => {
+            const targetId = item.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    function updateProgressBar(pages) {
+        const progressBar = document.getElementById('progress-bar');
+        // Обновляем стиль, чтобы изменить content псевдоэлемента
+        progressBar.style.setProperty('--content', `"${pages} страниц"`);
+    }
+
+    // Это добавит CSS переменную для изменения content
+    const style = document.createElement('style');
+    style.innerHTML = `
+        #progress-bar::before {
+            content: var(--content, "0 страниц");
+        }
+    `;
+    document.head.appendChild(style);
+</script>
+
+
+</body>
+</html>

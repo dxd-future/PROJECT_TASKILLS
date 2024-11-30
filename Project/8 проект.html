@@ -1,0 +1,1057 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --logo: url("https://i.pinimg.com/564x/8d/61/5f/8d615f5648a1ca22e698640b3a9df929.jpg");
+    --logo-tg: url("https://i.imgur.com/m8m1NgM.png");
+    --logo-vk: url("https://i.imgur.com/VQu2Sb4.png");
+    --logo-instagram: url("https://i.imgur.com/K5TKNYt.png");
+    --logo-youtube: url("https://i.imgur.com/BuqgCAy.png");
+    --my-room: url("https://i.pinimg.com/564x/fb/f9/62/fbf962d2260047e6075b7a6cb38374e2.jpg");
+    --heart: url("https://i.pinimg.com/564x/3e/33/a0/3e33a0e50a5bf00470406f55421e6960.jpg");
+    --heart-2: url("https://drive.google.com/thumbnail?id=15b_ZFzp-d0ewHvdECFTKuSDDJfFtIqLx");
+    --banner: url("https://i.imgur.com/t6FQXhq.jpeg");
+    --photo-1: url("https://i.imgur.com/jYxjVVz.jpeg");
+    --photo-2: url("https://i.imgur.com/p42vZrv.jpeg");
+    --photo-3: url("https://i.imgur.com/O0z8ZiH.jpeg");
+    --photo-4: url("https://i.imgur.com/WyHg3BL.jpeg");
+    --url: No-page.html;
+}
+
+::selection {
+background: rgb(51, 103, 209); 
+color: #fff; 
+}
+
+body {
+    background-color: white;
+}
+
+
+body {
+  --sb-track-color: #8c8c8c;
+  --sb-thumb-color: #565656;
+  --sb-size: 6px;
+  overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+    margin: -2px;
+    border: none;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+#header {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#button {
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background-image: var(--logo);
+    background-size: 140%;
+    background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+#my-room {
+    width: 50px;
+    height: 50px;
+    background-image: var(--my-room);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#heart {
+    width: 50px;
+    height: 50px;
+    background-image: var(--heart);
+    background-size: 127%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#black {
+    color: white;
+    height: fit-content;
+    background: black;
+    padding: 8px 0;
+    width: 100%;
+    font-size: 120%;
+    overflow: hidden;
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+    height: 70vh;
+    background-image: var(--banner);
+    box-shadow: inset 0px 0px 0px 0px black;
+    background-size: 120% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    filter: contrast(1.2);
+}
+
+#banner-2 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #80808040;
+    color: white;
+    backdrop-filter: blur(10px) contrast(1.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+    font-size: 400%;
+    text-shadow: 0 0 7px black;
+    user-select: none;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+#text-black {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    white-space: nowrap;
+    font-family: "Lato", sans-serif;
+    user-select: none;
+    font-size: small;
+    width: 30%;
+}
+
+#card {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px 10px 25px 25px;
+    background-color: #f3f3f3b0;
+    color: black;
+    margin: 10px 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+#card-image {
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: var(--photo-1);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+
+#categories-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#card-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: smaller;
+}
+
+#card-sell {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 50px;
+    text-align: right;
+    margin-right: 25px;
+    align-items: center;
+    font-size: smaller;
+}
+
+#card-limited {
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 4px 2px 4px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    color: black;
+    cursor: text;
+    margin: 10px 0px 10px 5px;
+    font-size: large;
+}
+
+#main-text {
+    width: fit-content;
+    height: fit-content;
+    font-size: x-large;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 30px 0 0px 0;
+    font-weight: 300;
+}
+
+#display-flex {
+    display: flex;
+}
+
+#left {
+    width: 60%;
+    display: flex;
+    padding-left: 5vh;
+    align-items: center;
+}
+
+#right {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5vh;
+    align-items: center;
+}
+
+#left > * {
+    margin: 10px; 
+    text-decoration: none; 
+    position: relative;
+}
+
+#left > *::after {
+    content: ""; 
+    display: block; 
+    width: 100%; 
+    height: 2px; 
+    background-color: black;
+    position: absolute; 
+    bottom: -5px; 
+    left: 0; 
+    transform: scaleX(0); 
+    transition: transform 0.3s ease; 
+}
+
+#text-banner {
+    font-size: large;
+    transition: all 2s ease;
+    margin-top: -20px;
+}
+
+#categories {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px 10px 25px 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: all 2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#categories-text {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 300%;
+    text-shadow: 2px 2px 20px black, -2px -2px 20px black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+
+#social-media {
+    height: fit-content;
+    font-size: small;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    padding: 7px;
+    margin: 10px 5px 10px 0;
+    border-radius: 10px;
+    border: 2px solid rgb(82, 82, 82);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+#collaboration {
+    width: fit-content;
+    height: fit-content;
+    font-size: x-large;
+    font-family: "Noto Sans", sans-serif;
+    text-transform: uppercase;
+    margin: 30px 0 0px 0;
+    font-weight: 300;
+}
+
+#social-logo {
+    height: 100%;
+    width: fit-content;
+    margin: 0 5px 0 0;
+    background: transparent;
+    background-image: var(--logo-tg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+}
+
+#social-text {
+    font-size: x-small;
+    width: 50%;
+}
+
+#grey-text {
+    color: grey;
+    margin-bottom: 20px;
+}
+
+#grey-text-active {
+    color: grey;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#end {
+    width: 100%;
+    min-height: 20vh;
+    padding: 60px 50px 50px 60px;
+    background: #000;
+    color: white;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    font-size: smaller;
+    margin-top: 10vh;
+}
+
+#end > #display-flex {
+    display: flex;
+    width: 100%;
+}
+
+#social-media > #display-flex {
+    display: flex;
+    align-items: center;
+}
+
+#social-network {
+    width: 90%;
+}
+
+#network {
+    background-color: #161616;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid rgb(82, 82, 82);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cook {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px 10px 25px 25px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-size: 120% 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: all 1s ease, transform 1s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#cook-text {
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+    text-shadow: 2px 2px 20px black, -2px -2px 20px black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border-radius: 2px 2px 4px 4px;
+    background: #00000063;
+    backdrop-filter: brightness(0.5);
+    margin-bottom: 10px;
+}
+
+#cook-text-2 {
+    font-style: italic;font-size: 65%;text-align: left;margin: 5px 0 5px 0;padding: 0 5px 0 5px;font-weight: 400;
+}
+
+#heart-card {
+    width: 50px;
+    height: 50px;
+    background-image: var(--heart-2);
+    background-size: 127%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    filter: invert(0.2) drop-shadow(2px 4px 9px black);
+}
+
+#network:hover {    
+    border: 2px solid white;
+    box-shadow: 0 0 5px 0px white;
+}
+
+#end-info {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#two > #grey-text-active {
+    margin-bottom: 18px;
+}
+
+#image-container {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.4);
+    transition: all 1s ease;
+}
+
+#collaboration-2 > #display-flex > #categories {
+    width: 100%;
+    font-size: 40%;
+    height: 40vh;
+}
+
+#bt-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+#bt-container-2 {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    height: auto;
+}
+
+#cook-hide {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    transform: scale(1);
+    transition: all 1s ease, transform 1s ease;
+}
+
+#button-right {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#width-80 {
+    max-width: 80%;
+    margin: auto;
+}
+
+@keyframes scroll {
+            0% {
+                transform: translateX(0%); 
+                opacity: 0;
+            }
+            10% {
+                opacity: 70%;
+            }
+
+            90% {
+                opacity: 70%;
+            }
+            100% {
+                transform: translateX(-100%); 
+                opacity: 0;
+            }
+}
+
+#social-media:hover {
+    border: white 2px solid;
+}
+
+#grey-text-active:hover {
+    color: rgb(213, 213, 213);
+}
+
+#my-room:hover, #heart:hover {
+    filter: opacity(0.8);
+}
+
+#left > *:not(#logo):hover::after { 
+    transform: scaleX(1); 
+}
+
+#width-80 > *:not(#cook) {
+    max-width: 100%;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+}
+
+#banner-2:hover {
+    opacity: 1; 
+}
+
+#banner-2:hover #text-banner {
+    font-size: 120%;
+}
+
+#card:hover {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.02);
+}
+
+#card:hover #card-image {
+    background-size: 110% 110%;
+}
+
+#invisible-block {
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    background: white;
+}
+
+#categories:hover {
+    background-size: 110% 110%;
+    filter: brightness(0.9);
+}
+
+#categories:hover #image-container {
+    transform: scale(1.3);
+}
+
+#heart-card:hover {
+    transform: scale(1.05);
+} 
+
+#cook:hover {
+    transform: scale(1.1);
+}
+
+.scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #171717;
+            color: white;
+            border-radius: 50%;
+            display: flex; 
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            opacity: 0; 
+            transition: opacity 0.5s ease, visibility 0.5s ease; 
+            visibility: hidden; 
+}
+
+        .scroll-to-top.visible {
+            opacity: 1; 
+            visibility: visible; 
+        }
+
+.scroll-to-top:hover {
+    background-color: #161616;
+}
+
+#cook:hover #cook-text {
+    opacity: 1;
+    bottom: 5%;
+}
+
+#cook:hover #cook-hide {
+    padding: 10px 2px;
+}
+</style>
+</head>
+<body>
+
+    <div class="scroll-to-top" id="scrollToTop">&#8593;</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.scrollY || document.documentElement.scrollTop;
+                const windowHeight = window.innerHeight;
+                const documentHeight = document.documentElement.scrollHeight;
+
+                if (scrollTop > 100) {
+                    scrollToTopButton.classList.add('visible');
+                } else {
+                    scrollToTopButton.classList.remove('visible');
+                }
+
+                if (scrollTop + windowHeight >= documentHeight - 500) { 
+                    scrollToTopButton.classList.remove('visible');
+                }
+            });
+
+            scrollToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+    function openUrl(url) {
+        window.location.href = url;
+    }
+
+    const elements = document.querySelectorAll('#button, #my-room, #heart, #card, #categories, #social-media, #grey-text-active, #network, #heart-card');
+
+    elements.forEach(function(element) {
+        element.onclick = function() {
+            const url = getComputedStyle(document.documentElement).getPropertyValue('--url').trim().replace(/['"]/g, '');
+            openUrl(url);
+        };
+    });
+});
+    </script>
+
+<div id="header">
+    <div id="left">
+    <div id="logo" alt="logo"></div>
+    <div id="button">Главная</div>
+    <div id="button">Каталог</div>
+    <div id="button">Заказ</div>
+    <div id="button">Предложения</div>
+    <div id="button">Sale</div>
+    </div>
+
+    <div id="right">
+        <div id="heart"></div>
+        <div id="my-room"></div>
+    </div>
+</div>
+
+
+<div id="black">
+    <div id="text-black">Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty</div>
+</div>
+
+<div id="banner">
+    <div id="banner-2">
+        25.09.2024
+        <br> <span id="text-banner">новая категория</span>
+    </div>
+</div>
+
+<div id="black">
+    <div id="text-black">Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty / Food is tasty</div>
+</div>
+
+
+<div id="width-80">
+<div id="main-text">
+Лимитированное предложение
+</div>
+<div id="display-flex">
+    <div id="card">
+        <div id="invisible-block">
+        <div id="display-flex">
+        <div id="card-limited">Limited</div>
+        <div id="card-limited">Предзаказ</div>
+        <div id="heart-card"></div>
+        </div>
+        </div>
+        <div id="card-image" style="background-image: var(--photo-1);">
+    </div>
+    <div id="display-flex">
+    <div id="card-text">Кот</div>
+    <div id="card-sell">3500₽</div>
+    </div>
+</div>
+
+<div id="card">
+        <div id="invisible-block">
+        <div id="display-flex">
+        <div id="card-limited">Limited</div>
+        <div id="card-limited">Предзаказ</div>
+        <div id="heart-card"></div>
+        </div>
+    </div>
+    <div id="card-image" style="background-image: var(--photo-2);">
+    </div>
+    <div id="display-flex">
+    <div id="card-text">Торт</div>
+    <div id="card-sell">2700₽</div>
+    </div>
+</div>
+
+<div id="card">
+        <div id="invisible-block">
+        <div id="display-flex">
+        <div id="card-limited">Limited</div>
+        <div id="card-limited">Предзаказ</div>
+        <div id="heart-card"></div>
+        </div>
+    </div>
+    <div id="card-image" style="background-image: var(--photo-3);">
+    </div>
+    <div id="display-flex">
+    <div id="card-text">Рамен</div>
+    <div id="card-sell">500₽</div>
+    </div>
+</div>
+
+<div id="card">
+    <div id="invisible-block">
+    <div id="display-flex">
+    <div id="card-limited">Limited</div>
+    <div id="card-limited">Предзаказ</div>
+    <div id="heart-card"></div>
+    </div>
+</div>
+<div id="card-image" style="background-image: var(--photo-4);">
+</div>
+<div id="display-flex">
+<div id="card-text">Пончик</div>
+<div id="card-sell">5000₽</div>
+</div>
+</div>
+</div>
+
+<div style="font-size: small;"></div>
+<div id="width-80">
+<div id="collaboration">Категории ></div>
+</div>
+<div id="display-flex" style="max-width: 80%;margin: auto;">
+    <div id="categories">
+        <div id="image-container" style="background-image: var(--photo-1);"></div>
+            <div id="categories-text">Боксы</div>
+    </div>
+    <div id="categories">
+        <div id="image-container" style="background-image: var(--photo-2);"></div>
+        <div id="categories-text">Сладкое</div>
+    </div>
+    <div id="categories">
+        <div id="image-container" style="background-image: var(--photo-3);"></div>
+        <div id="categories-text">Основное</div>
+    </div>
+</div>
+
+<div id="display-flex" style="max-width: 80%;margin: auto;">
+    <div id="categories">
+        <div id="image-container" style="background-image: var(--photo-4);"></div>
+        <div id="categories-text">Закуски</div>
+    </div>
+    <div id="categories">
+        <div id="image-container" style="background-image: var(--photo-1);"></div>
+        <div id="categories-text">Напитки</div>
+    </div>
+    <div id="categories">
+        <div id="image-container" style="background-image: var(--photo-2);"></div>
+        <div id="categories-text">Салаты</div>
+    </div>
+</div>
+
+<div id="bt-container">
+<div id="width-80">
+<div id="collaboration">Наши повара ></div>
+<div style="display: flex; position: relative;">
+    <div id="bt-container-2"><div id="button-right">←</div></div>
+    <div id="cook-hide">
+<div id="cook"><div id="cook-text">Иванов Иван<p style="font-style: italic;font-size: small;margin: 0;">Стаж 14 лет</p><p id="cook-text-2">После закрытия ресторана повар открыл уличную лавку с тако, и его блюда быстро стали хитом в городе.</p></div><div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/d2/35/47/d2354797cfb995122e8bf0248cb1fd76.jpg)"></div></div>
+<div id="cook"><div id="cook-text">Иванов Иван<p style="font-style: italic;font-size: small;margin: 0;">Стаж 6 лет</p><p id="cook-text-2">Путешествуя, шеф-повар собрал уникальные рецепты и вернулся домой, чтобы создать кулинарную книгу о своих приключениях.</p></div><div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/d2/35/47/d2354797cfb995122e8bf0248cb1fd76.jpg)"></div></div>
+<div id="cook"><div id="cook-text">Иванов Иван<p style="font-style: italic;font-size: small;margin: 0;">Стаж 10 лет</p><p id="cook-text-2">В маленьком городке повар-одиночка устраивал бесплатные обеды для бездомных, и его кухня стала местом надежды и дружбы.</p></div><div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/d2/35/47/d2354797cfb995122e8bf0248cb1fd76.jpg)"></div></div>
+<div id="cook"><div id="cook-text">Иванов Иван<p style="font-style: italic;font-size: small;margin: 0;">Стаж 12 лет</p><p id="cook-text-2" style="font-size: 60%;">Вдохновленный традициями, повар создал уникальное меню, смешав национальную кухню с современными техниками, привлекая внимание публики.</p></div><div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/d2/35/47/d2354797cfb995122e8bf0248cb1fd76.jpg)"></div></div>
+<div id="cook"><div id="cook-text">Иванов Иван<p style="font-style: italic;font-size: small;margin: 0;">Стаж 16 лет</p><p id="cook-text-2"> Его популярные блюда в Instagram привели к мастер-классам, где он делился кулинарными секретами с молодыми шефами.</p></div><div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/d2/35/47/d2354797cfb995122e8bf0248cb1fd76.jpg)"></div></div>
+    </div>
+    <div id="bt-container-2"><div id="button-right">→</div></div>
+</div>
+</div>
+</div>
+
+<div style="max-width: 80%;margin: auto;">
+<div id="collaboration">Коллаборации ></div>
+<div id="collaboration-2">
+<div id="display-flex">
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/736x/b7/c6/63/b7c6635d718443594fcd99a6b2feef1d.jpg)"></div>
+        <div id="categories-text">Агропромстрой</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/6d/df/11/6ddf110a9cca5642fedb2f0b5ed905d9.jpg)"></div>
+        <div id="categories-text">Маккавеевский пищекомбинат</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/cd/8b/c7/cd8bc718be3153fc5804f8ce1f56bc56.jpg)"></div>
+        <div id="categories-text">Кондитерская фабрика "Радуга"</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/62/53/a6/6253a659f49791f01384b66943224214.jpg)"></div>
+        <div id="categories-text">Кафе "Учкудук"</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/79/4c/cf/794ccf2844491fc34530e855a9b8a531.jpg)"></div>
+        <div id="categories-text">Кафе "Солонго"</div>
+    </div>
+</div>
+
+<div id="display-flex">
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/b3/0d/0c/b30d0c10fa2e93a15b12714731d7ca96.jpg)"></div>
+        <div id="categories-text">Кафе "Вилка Ложка"</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/b9/b3/36/b9b3365197db10bd6bd9d337009ef52d.jpg)"></div>
+        <div id="categories-text">Гриль-бар "Шафранов"</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/8a/f2/b6/8af2b6675faf863f0754e019910c9b03.jpg)"></div>
+        <div id="categories-text">Ресторан "Ария"</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/736x/2c/d4/95/2cd4958a98859c090b233e64eb5c9a19.jpg)"></div>
+        <div id="categories-text">Кафе "Венское"</div>
+    </div>
+    <div id="categories">
+        <div id="categories-image" style="background-image: url(https://i.pinimg.com/564x/33/a3/06/33a306953f1e6719cd3dc817124504e2.jpg)"></div>
+        <div id="categories-text">Кафе "Аян"</div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="end">
+    <div id="display-flex">
+    <div id="end-info">
+    Вопросы о заказах
+    <div id="display-flex">
+    <div id="social-media">
+        <div id="display-flex">
+        <div id="social-logo">ㅤ</div>
+        <div id="social-text">Написать</div>
+        </div>
+    </div>
+
+    <div id="social-media">
+        <div id="display-flex">
+        <div id="social-logo">ㅤ</div>
+        <div id="social-text">Написать</div>
+        </div>
+    </div>
+    </div>
+    <div id="grey-text" style="margin-bottom: 3px;">
+    Время работы: Пн-Пт с 11:00 до 16:00
+    </div>
+    <div id="grey-text-active">
+    kitchen-chpk@mail.ru
+    </div>
+
+    Дополнительные вопросы:
+    <div id="grey-text-active">
+    Main-chpk@mail.ru
+    </div>
+</div>
+    <div id="end-info">
+    Магазин
+
+    <div id="grey-text-active">
+    Главная страница
+    </div>
+
+    <div id="grey-text-active">
+    Правильное питание
+    </div>
+
+    <div id="grey-text-active">
+    Кондитерские изделия
+    </div>
+
+    <div id="grey-text-active">
+    Фаст-фуд
+    </div>
+
+    <div id="grey-text-active">
+    Ланч-боксы
+    </div>
+    </div>
+
+    <div id="end-info">
+    Информация
+
+    <div id="grey-text-active">
+    Основная информация
+    </div>
+
+    <div id="grey-text-active">
+    Санитарные нормы
+    </div>
+
+    <div id="grey-text-active">
+    Справка об указанных услугах
+    </div>
+
+    <div id="grey-text-active">
+    Разрешение на продажу товаров
+    </div>
+
+    <div id="grey-text-active">
+    Дополнительная информация
+    </div>
+    </div>
+
+    <div id="end-info">
+    Руководства
+
+    <div id="grey-text-active">
+    Частые вопросы
+    </div>
+
+    <div id="grey-text-active">
+    Инструкция по заказу товаров
+    </div>
+
+    <div id="grey-text-active">
+    Мобильное приложение
+    </div>
+
+    <div id="grey-text-active">
+    Процесс возврата товаров
+    </div>
+
+    <div id="grey-text-active">
+    Как оформить предзаказ?
+    </div>
+    </div>
+
+    <div id="end-info">
+    Наши соц.сети
+
+    <div id="social-network">
+        <div id="display-flex">
+        <div id="network" style="background-image: var(--logo-tg);background-size: 45%;"></div>
+        <div id="network" style="background-image: var(--logo-vk);"></div>
+        <div id="network" style="background-image: var(--logo-instagram);"></div>
+        <div id="network" style="background-image: var(--logo-youtube);"></div>
+        </div>
+    </div>
+
+    <div id="grey-text" style="color: rgb(82, 82, 82);">
+    ИП Иванов Иван Иванович
+    <br>ИНН: 744410767676
+    <br>ОГРНИП: 317745600008299
+
+    <br><div style="margin-top: 20px;">© 2024 CHPK</div>
+    </div>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
